@@ -1,0 +1,30 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "My splendiferous Nuxt.js project",
+  "author": "Carson",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "file-loader": "^3.0.1",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.11.0",
+    "nuxt": "^2.4.0",
+    "reset-css": "^4.0.1",
+    "sass-loader": "^7.1.0",
+    "url-loader": "^1.1.2",
+    "weixin-js-sdk": "^1.4.0-test"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
