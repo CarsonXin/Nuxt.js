@@ -106,8 +106,8 @@ const setupProgress = (axios, ctx) => {
 export default (ctx, inject) => {
   // baseURL
   const baseURL = process.browser
-      ? '[object Object]'
-      : (process.env._AXIOS_BASE_URL_ || '[object Object]')
+      ? '/api/baotop'
+      : (process.env._AXIOS_BASE_URL_ || '/api/baotop')
 
   // Create fresh objects for all default header scopes
   // Axios creates only one which is shared across SSR requests!

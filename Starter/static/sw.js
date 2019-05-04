@@ -1,29 +1,29 @@
-importScripts('/_nuxt/workbox.4c4f5ca6.js')
+importScripts('https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/8f866e7bb30358765893.js",
-    "revision": "d2727b1644be8a7c82483e29eaa0a8fb"
+    "url": "https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/3441b40da8bdb9037ba7.js",
+    "revision": "f61196e45ff15ad4cb51961161d448cf"
   },
   {
-    "url": "/_nuxt/97a1894b022eac9ce7e3.js",
-    "revision": "a4e86a7f05df9d776c9a89c26facd901"
+    "url": "https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/6b6be0d3563868981227.js",
+    "revision": "3c97d2b888883bcc2d7b026cb4c53a13"
   },
   {
-    "url": "/_nuxt/aa4858cd65660d837d9f.js",
-    "revision": "e528ea4add6b75fde7d903203822fb5f"
+    "url": "https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/a4cba453a995615d7391.js",
+    "revision": "b249d2a7c3682e47a41765b8eb385bf0"
   },
   {
-    "url": "/_nuxt/b8a2d0e4c9873e9ac455.js",
-    "revision": "a7de6b63e7db86d86786db5ae2b363f0"
+    "url": "https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/bb365e8f1e47578ac155.js",
+    "revision": "581f1d2867d13365913a7314d7fb378f"
   },
   {
-    "url": "/_nuxt/e87213927b6e6e186550.js",
-    "revision": "04dd25d944f320e69ea3b6006b85dcf4"
+    "url": "https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/bf8b0cd621e0b3d1a6ab.js",
+    "revision": "ea0810cf5d2693d4340d4867e6b1bcbe"
   },
   {
-    "url": "/_nuxt/f9d270e600d57ee5a5af.js",
-    "revision": "55ed0fe02acfb10563d8de3c42d9807f"
+    "url": "https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/c252e56b8d6fce3aa24c.js",
+    "revision": "fca81661beac4ecffc176c46ce1315d1"
   }
 ], {
   "cacheId": "starter",
@@ -34,6 +34,6 @@ workbox.precaching.precacheAndRoute([
 workbox.clientsClaim()
 workbox.skipWaiting()
 
-workbox.routing.registerRoute(new RegExp('/_nuxt/.*'), workbox.strategies.cacheFirst({}), 'GET')
+workbox.routing.registerRoute(new RegExp('https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/.*'), workbox.strategies.cacheFirst({}), 'GET')
 
 workbox.routing.registerRoute(new RegExp('/.*'), workbox.strategies.networkFirst({}), 'GET')

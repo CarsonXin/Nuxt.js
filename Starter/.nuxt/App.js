@@ -3,12 +3,16 @@ import NuxtLoading from './components/nuxt-loading.vue'
 
 import '../node_modules/element-ui/lib/theme-chalk/index.css'
 
+import '../node_modules/reset-css/sass/_reset.scss'
+
+import '../assets/styles/common.scss'
+
 import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"starter","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My splendiferous Nuxt.js project"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"starter"},{"hid":"author","name":"author","content":"Carson"},{"hid":"theme-color","name":"theme-color","content":"#2fe3bb"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"starter"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"starter"},{"hid":"og:description","name":"og:description","property":"og:description","content":"My splendiferous Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.d71e331c.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64.9mld2VBMsQ$.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512.9mld2VBMsQ$.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
+  head: {"title":"starter","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My splendiferous Nuxt.js project"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"starter"},{"hid":"author","name":"author","content":"Carson"},{"hid":"theme-color","name":"theme-color","content":"#2fe3bb"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"starter"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"starter"},{"hid":"og:description","name":"og:description","property":"og:description","content":"My splendiferous Nuxt.js project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"manifest","href":"https:\u002F\u002Fvdoou-mmd.oss-cn-shenzhen.aliyuncs.com\u002Fbaotopv2\u002Fassets\u002Fmanifest.71d47c15.json"},{"rel":"shortcut icon","href":"https:\u002F\u002Fvdoou-mmd.oss-cn-shenzhen.aliyuncs.com\u002Fbaotopv2\u002Fassets\u002Ficons\u002Ficon_64.9mld2VBMsQ$.png"},{"rel":"apple-touch-icon","href":"https:\u002F\u002Fvdoou-mmd.oss-cn-shenzhen.aliyuncs.com\u002Fbaotopv2\u002Fassets\u002Ficons\u002Ficon_512.9mld2VBMsQ$.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
@@ -101,8 +105,6 @@ export default {
     },
 
     setLayout(layout) {
-      if(layout && typeof layout !== 'string') throw new Error('[nuxt] Avoid using non-string value as layout property.')
-
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }

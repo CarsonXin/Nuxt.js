@@ -29,6 +29,8 @@ export default {
   */
   css: [
     'element-ui/lib/theme-chalk/index.css',
+    'reset-css/sass/_reset.scss',
+    './assets/styles/common.scss',
   ],
 
   /*
@@ -80,5 +82,7 @@ export default {
         },
       });
     },
+    publicPath: 'https://vdoou-mmd.oss-cn-shenzhen.aliyuncs.com/baotopv2/assets/' // 将代码上传至cdn
+    // publicPath: '/assets/' // 将代码上传至cdn
   },
 };

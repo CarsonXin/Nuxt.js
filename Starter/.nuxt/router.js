@@ -2,8 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _40eaa164 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _3027540c = () => interopDefault(import('../pages/index/Home.vue' /* webpackChunkName: "pages/index/Home" */))
+const _947ca818 = () => interopDefault(import('../pages/Home.vue' /* webpackChunkName: "pages/Home" */))
+const _0d64a36e = () => interopDefault(import('../pages/whatIndex.vue' /* webpackChunkName: "pages/whatIndex" */))
 
 Vue.use(Router)
 
@@ -80,14 +80,13 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
-      path: "/",
-      component: _40eaa164,
-      name: "index",
-      children: [{
-        path: "Home",
-        component: _3027540c,
-        name: "index-Home"
-      }]
+      path: "/Home",
+      component: _947ca818,
+      name: "Home"
+    }, {
+      path: "/whatIndex",
+      component: _0d64a36e,
+      name: "whatIndex"
     }],
 
     fallback: false
